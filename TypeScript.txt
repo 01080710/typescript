@@ -1,0 +1,29 @@
+1. 建立專案資料夾
+mkdir ts-minimal
+cd ts-minimal
+
+2. 初始化專案
+npm init -y
+
+3. 安裝 TypeScript
+npm install typescript --save-dev
+
+4. 初始化設定檔
+npx tsc --init
+
+5. 建立最小程式
+index.ts
+
+const message: string = "Hello TypeScript!";
+console.log(message);
+
+6. 編譯(包含監聽)
+npx tsc -w
+
+7. 執行
+node index.js
+
+npm install -D playwright typescript ts-node
+npx playwright install
+
+npx playwright codegen https://www.tw.coupang.com/
