@@ -6,6 +6,7 @@ cd ts-minimal
 npm init -y
 
 3. 安裝 TypeScript
+npm install typescript -g
 npm install typescript --save-dev
 
 4. 初始化設定檔
@@ -21,8 +22,14 @@ console.log(message);
 npx tsc -w
 
 7. 執行
-node index.js
+a. 從ts逕行編譯成js執行
+npx ts-node index.ts
 
+b. ts先編譯成js,再進行js指令執行
+tsc index.ts
+node index.js 
+
+8. 延伸套件下載
 npm install -D playwright typescript ts-node
 npx playwright install
 
